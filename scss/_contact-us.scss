@@ -1,0 +1,72 @@
+/*-------- 22. Contact us style ---------*/
+.contact-us{
+  position: relative;
+  overflow: hidden;
+.contact-left{
+  padding:50px 0;
+
+  h2{
+    @media #{$xs-layout} {
+      font-size: 33px;
+    }
+  }
+}
+  .contact-list{
+    height: 320px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    @media #{$xs-layout,$mdd-layout} {
+      height: auto;
+    }
+    @media #{$xs-layout,$mdd-layout} {
+      height: auto;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+
+  }
+  ul{
+   li{
+     padding: 45px 40px 0px 0px;
+     width: 100%;
+
+     @media #{$xs-layout,$mdd-layout} {
+       padding: 20px 0;
+     }
+   }
+    .right-list{
+      padding-top: 88px;
+      @media #{$xs-layout,$mdd-layout} {
+        padding-top: 0;
+      }
+    }
+    img{
+      padding-left: 10px;
+    }
+  }
+  h6{
+    font-size: 20px;
+    font-weight: $regular;
+    margin-bottom: 20px;
+  }
+
+  .apr{
+    @media #{$xs-layout,$mdd-layout} {
+      padding: 0;
+    }
+  }
+  #map{
+    height: 100%;
+    width: 1000px;
+    @media #{$mdd-layout} {
+      width: 100%;
+    }
+    @media #{$xs-layout} {
+      width: 100%;
+      overflow-y: visible !important;
+      height: 400PX;
+    }
+  }
+}

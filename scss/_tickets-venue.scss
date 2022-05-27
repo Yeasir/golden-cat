@@ -1,0 +1,148 @@
+/*-------- 10. Tickets and venue information style ---------*/
+.tickets-venue{
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  background-color: #EEEDE9;
+}
+.price-item-box{
+  padding: 30px 30px 35px 30px;
+  background-color: $white;
+
+  @media #{$xs-layout,$md-layout} {
+    margin-bottom: 30px;
+  }
+  h2{
+    text-align: center;
+    font-size: 80px;
+    sub {
+      bottom: -6.1px;
+      margin-left: -13px;
+    }
+  }
+
+  .feature-title{
+    h4{
+      font-family: $roboto;
+      font-weight: $bold;
+      line-height: 1.8;
+      margin-bottom: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      position: relative;
+      @media #{$lg-layout,$xs-layout} {
+       font-size: 20px;
+        line-height: 2.5;
+      }
+      &:before, &:after{
+        content: '';
+        position: absolute;
+        width: auto;
+        height:auto;
+        display: block;
+        top:0;
+        z-index: 999;
+        width: 34px;
+        height: 50px;
+        @media #{$xss-layout} {
+          height: 58px;
+        }
+      }
+      &:before{
+        background: url('#{$assetPath}/right-icon.svg') no-repeat center center;
+        background-size: auto;
+        right: 0;
+        margin-right: -25px;
+      }
+      &:after{
+        background: url('#{$assetPath}/left-icon.svg') no-repeat center center;
+        background-size: auto;
+        left: 0;
+        margin-left: -25px;
+      }
+    }
+  }
+  .feature-list{
+    position: relative;
+    overflow: hidden;
+    li{
+      margin-bottom: 35px;
+      padding-left: 30px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        background:  url('#{$assetPath}/tick-inside-circle.svg') no-repeat center;
+        background-size: auto;
+        left: 0;
+        top: 0;
+        height: 20px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+.feature-btn{
+  background: $white;
+  font-weight: normal;
+  font-size: $font-size-base;
+  color: $theme-color;
+  font-family: $playfair;
+  padding: 13px 28px;
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+  border: 1px solid $theme-color;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  border-radius: 0;
+  margin-left: 34px;
+  margin-right: 34px;
+  position: relative;
+  display: inline-block;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    width: auto;
+    height:auto;
+    display: block;
+    top:0;
+    z-index: 999;
+    width: 34px;
+    height: 50px;
+  }
+
+  &:before{
+    background: url('#{$assetPath}/f2.svg') no-repeat center center;
+    background-size: auto;
+    right: 0;
+    margin-right: -34px;
+    object-fit: fill;
+  }
+  &:after{
+    background: url('#{$assetPath}/f1.svg') no-repeat center center;
+    background-size: auto;
+    left: 0;
+    margin-left: -34px;
+    object-fit: fill;
+  }
+  &:hover,&:focus{
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid transparent;
+    background: $theme-color;
+    color: $white;
+    &:before{
+      background: url('#{$assetPath}/right-icon.svg') no-repeat center center;
+      background-size: auto;
+      object-fit: fill;
+    }
+    &:after{
+      background: url('#{$assetPath}/left-icon.svg') no-repeat center center;
+      background-size: auto;
+      object-fit: fill;
+    }
+  }
+}

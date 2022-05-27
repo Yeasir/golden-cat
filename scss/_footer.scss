@@ -1,0 +1,63 @@
+
+/*-------- 10. Footer style ---------*/
+.footer-area{
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  background-color: $theme-color;
+}
+.social-link{
+  li{
+    &.list-inline-item:not(:last-child){
+      margin-right: 28px;
+    }
+  }
+  li>a{
+    font-family: $roboto;
+    font-size: $font-size-base;
+    color: $white;
+    font-weight: $regular;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    &:hover,&:focus{
+      box-shadow: none;
+      outline: 0;
+      border: 0;
+      color: $dark;
+      transition: 1s ease-in-out;
+      -webkit-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
+    }
+  }
+}
+.copy-right-text{
+  margin-left: -5px;
+  p{
+    color: $white;
+    @media #{$lg-layout} {
+     font-size: 12px;
+    }
+  }
+  @media #{$xs-layout} {
+    margin-bottom: 10px;
+  }
+}
+.footer-widget{
+  @media #{$xs-layout} {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  select.custom-select{
+    color: $white;
+    border-radius: 0;
+    border:1px solid $white;
+    background: url('#{$assetPath}/arrow-down-white.png') no-repeat right transparent;
+    background-position-x: 45px;
+    option{
+      background-color: $theme-color;
+        box-shadow: none;
+      outline: 0;
+    }
+  }
+}

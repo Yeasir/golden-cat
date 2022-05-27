@@ -1,0 +1,154 @@
+/*-------- 20. Event schedule style ---------*/
+.event-schedule{
+  padding: 40px 0;
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('#{$assetPath}/shedule-card.svg') no-repeat top right;
+    background-size: auto;
+    top: -40%;
+    left: auto;
+    right: -467px;
+    z-index:1;
+    @media #{$xx-layout} {
+      right: -555px;
+    }
+    @media #{$xl-layout} {
+      right: -612px;
+    }
+
+    @media #{$md-layout, $xs-layout,$lg-layout} {
+      display: none;
+    }
+  }
+
+
+  h1{
+    font-size: 150px;
+  }
+  h4{
+    font-family: $roboto;
+    font-weight: $bold;
+    margin-bottom: 25px;
+  }
+
+  .table{
+    tr{
+      //width: 160px;
+    }
+    th{
+      padding: 0px 25px 0px 0px;
+      width: 0px;
+    }
+      h6{
+        font-size: 16px;
+        font-weight: $bold;
+        font-family: $roboto;
+        color: $dark;
+      }
+      .time{
+        font-weight: $regular;
+        width: 100px;
+      }
+
+    td{
+      border:none;
+      padding: 0 0 30px 0;
+    }
+    p{
+      font-size: 14px;
+      font-weight: $medium;
+      color: #ACACAC;
+    }
+    h5{
+      font-size: 16px;
+      font-weight: $bold;
+      font-family: $roboto;
+    }
+  }
+
+
+  .slick-slide{
+
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 320px;
+      width: 1px;
+      background-color: #bfbfbf;
+      right: 0;
+      margin-right: 10px;
+      top: 50%;
+      margin-top: -103px;
+      @media #{$xs-layout, $md-layout} {
+        display: none;
+      }
+    }
+
+    &:last-child{
+      &:before{
+       display: none;
+      }
+    }
+
+  }
+
+}
+.schedule-body{
+  margin-top: -70px;
+}
+
+.schedule-slider{
+  position: relative;
+  .slick-arrow{
+    height: 45px;
+    width: 50px;
+    border: 0;
+    position: absolute;
+    bottom: -13px;
+    right: 0%;
+    z-index: 1;
+
+    @media #{$xss-layout} {
+      bottom: -13px;
+      right: 40%;
+    }
+    @media #{$xsm-layout} {
+      bottom: -13px;
+      right: 40%;
+    }
+
+  }
+
+  .slick-prev{
+    background: #EEEDE9 url('#{$assetPath}/left-icon.svg') no-repeat center;
+    background-size: auto;
+    margin-right: 52px;
+    @media #{$xss-layout} {
+      margin-right: 0px;
+      left: 35%;
+    }
+    @media #{$xsm-layout} {
+      margin-right: 0px;
+      left: 35%;
+    }
+  }
+  .slick-next{
+    background: #EEEDE9 url('#{$assetPath}/right-icon.svg') no-repeat center;
+    background-size: auto;
+    @media #{$xss-layout} {
+      margin-right: 0px;
+      right: 35%;
+    }
+    @media #{$xsm-layout} {
+      margin-right: 0px;
+      right: 35%;
+    }
+  }
+}

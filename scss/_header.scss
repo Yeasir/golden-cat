@@ -1,0 +1,192 @@
+/*-------- 2. Header style ---------*/
+.header-area{
+  position: relative;
+  background: transparent;
+}
+.absolute-header{
+  position: absolute;
+  width: 100%;
+  display: block;
+  left: 0;
+  right: 0;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  z-index: 9999;
+}
+.navbar-expand-lg {
+  padding: 15px 0;
+  .navbar-nav {
+    .nav-item{
+      &.active{
+        .nav-link {
+          font-weight: $xx-bold;
+        }
+      }
+    }
+    .nav-link{
+      font-family: $playfair;
+      font-weight: normal;
+      font-size: $font-size-base;
+      color: $dark;
+      padding:10px 15px;
+      font-weight: $regular;
+      &:hover{
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+.buyticket-right-side-box{
+  .nav-link{
+    font-family: $playfair;
+    font-weight: normal;
+    font-size: $font-size-base;
+    color: $dark;
+    padding: 0 14px;
+    font-weight: $regular;
+    &:hover{
+      color: $theme-color;
+    }
+  }
+  select.custom-select{
+    font-weight: $bold;
+    font-weight: $regular;
+    font-family: $roboto;
+    font-size: $font-size-base;
+    color: $theme-color;
+    border-radius: 0;
+    border:1px solid $theme-color;
+    -moz-appearance:none !important; /* Firefox */
+    -webkit-appearance:none !important; /* Safari and Chrome */
+    appearance:none!important;
+    height: 34px;
+    background: url('#{$assetPath}/arrow-down.png') no-repeat right $white;
+    background-size: auto;
+    -webkit-appearance: none;
+    background-position-x: 45px;
+    margin: 0;
+    &:hover,&:focus{
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+}
+select.custom-select{
+  width: auto;
+  font-weight: $regular;
+  font-family: $roboto;
+  font-size: $font-size-base;
+  line-height: 16px;
+  color: $theme-color;
+  border-radius: 0;
+  border:1px solid $theme-color;
+  -moz-appearance:none !important; /* Firefox */
+  -webkit-appearance:none !important; /* Safari and Chrome */
+  appearance:none!important;
+  height: 34px;
+  background: url('#{$assetPath}/arrow-down.png') no-repeat right transparent;
+  background-size: auto;
+  -webkit-appearance: none;
+  background-position-x: 45px;
+  margin: 0;
+  &:hover,&:focus{
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+
+.select2-container--default .select2-selection--single {
+  font-weight: $bold;
+  font-weight: $regular;
+  font-family: $roboto;
+  font-size: $font-size-base;
+  color: $theme-color;
+  border-radius: 0;
+  border:1px solid $theme-color;
+  -webkit-appearance: none;
+  margin: 0;
+  &:hover,&:focus{
+    box-shadow: none;
+    outline: 0;
+  }
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-weight: $bold;
+  font-weight: $regular;
+  font-family: $roboto;
+  font-size: $font-size-base;
+  color: $theme-color;
+  -webkit-appearance: none;
+  margin: 0;
+  &:hover,&:focus{
+    box-shadow: none;
+    outline: 0;
+  }
+}
+.select2-dropdown{
+  border-radius: 0;
+}
+.navbar-toggler{
+  i{
+    color: $theme-color;
+    font-size: 20px;
+  -webkit-text-stroke: .5px $white;
+
+  }
+}
+.top-right-side-nfo{
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: $white;
+  padding: 15px;
+  z-index: -1;
+  @media #{$xs-layout,$md-layout} {
+    padding: 5px;
+  }
+  .register-btn{
+    @media #{$xs-layout} {
+      padding: 10px 24px;
+    }
+  }
+
+  &.active{
+    opacity: 1;
+  }
+  ul>li{
+    @media #{$xsm-layout, $xss-layout} {
+     display: block;
+      text-align: center;
+    }
+    &.list-inline-item:not(:last-child) {
+      @media #{$xsm-layout,$xss-layout} {
+        margin-right: 0;
+        margin-bottom: 7px;
+      }
+    }
+
+  }
+  .divider{
+    @media #{$xsm-layout,$xss-layout} {
+      display: none;
+    }
+  }
+
+  @media #{$xss-layout} {
+    padding: 4px;
+    width: 100%;
+  }
+
+}
+.divider{
+  height: 30px;
+  width: 1px;
+  background-color: #dddddd;
+  vertical-align: middle;
+}

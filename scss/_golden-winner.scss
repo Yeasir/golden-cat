@@ -1,0 +1,198 @@
+/*-------- 4. golden-winner style ---------*/
+.golden-winner{
+position: relative;
+  overflow: hidden;
+  padding: 70px 0;
+  @media #{$xs-layout} {
+    padding: 40px 0;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('#{$assetPath}/circle.svg') no-repeat center left;
+    background-size: auto;
+    left: -290px;
+    top: 8%;
+    @media #{$xs-layout} {
+     display: none;
+    }
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('#{$assetPath}/winner/price.svg') no-repeat center right;
+    background-size: auto;
+    top:5%;
+    right: -4%;
+    z-index: -1;
+    @media #{$lg-layout} {
+      right: -9%;
+    }
+    @media #{$xs-layout} {
+      display: none;
+    }
+  }
+}
+.king-card{
+  border-radius: 9px;
+  background: #cba26e;
+  padding: 40px 54px;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+
+  .icon-box-left-top, .icon-box-right-bottom{
+    padding: 8px 0 0 8px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    h2{
+      font-weight: $black;
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    &.clubs{
+      h2{
+        color: #0D304E;
+      }
+    }
+    &.spreed{
+      h2{
+        color: #4A2900;
+      }
+    }
+    &.hearts{
+      h2{
+        color: #AB3229;
+      }
+    }
+  }
+
+  .icon-box-left-top{
+    left: 0;
+    top: 0;
+  }
+  .icon-box-right-bottom{
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+
+
+  .king-card-inner{
+    border: 1px solid #4A2900;
+    border-radius: 9px;
+    color: #4A2900;
+    .img-box{
+      background-repeat: no-repeat;
+      background-position:center center;
+     background-size: cover;
+      height: 265px;
+      min-height: 265px;
+      @media #{$sm-layout} {
+        min-height: 600px;
+      }
+    }
+    .name-box{
+      padding: 40px 10px;
+    }
+    h4{
+      color: #4A2900;
+    }
+  }
+}
+
+.winner-table{
+  border-collapse:separate;
+  border-spacing: 0 22px;
+  tr>td , tr> th{
+    padding: 20px 2px;
+  }
+  tr>td{
+     vertical-align: middle;
+     background-color: #EEEDE9;
+   }
+
+  tr> th{
+    vertical-align: middle;
+    background-color: #EEEDE9;
+  }
+
+  tr{
+    &:nth-of-type(1n){
+        .winner-counter{
+          color: #B18B59;
+        }
+      }
+    }
+  tr{
+    &:nth-of-type(2n){
+      .winner-counter{
+        color: #B4B4B4;
+      }
+    }
+  }
+  tr{
+    &:nth-of-type(3n){
+      .winner-counter{
+      color: #896400;
+      }
+    }
+  }
+
+
+  .winner-counter{
+    font-size: 65px;
+    line-height: 35px;
+  }
+
+  .winner-content-box, .winner-img-box{
+    vertical-align: middle;
+    h5{
+      @media #{$xs-layout} {
+        font-size: 18px;
+      }
+      @media #{$mdd-layout} {
+       font-size: 15px;
+      }
+    }
+  }
+  .position{
+    font-size: 16px;
+    color: #5D401B;
+    font-weight: $medium;
+  }
+}
+.winner-card-icon{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  h4{
+    font-size: 23px;
+    margin-bottom: 0;
+  }
+  &.blue-text{
+   h4{
+     color: #0D304E;
+   }
+  }
+  &.red-text{
+   h4{
+     color: #AB3229;
+   }
+  }
+  &.red-text{
+   h4{
+     color: #AB3229;
+   }
+  }
+}

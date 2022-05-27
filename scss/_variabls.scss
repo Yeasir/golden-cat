@@ -1,0 +1,58 @@
+// Font Family
+$playfair: 'Playfair Display', serif;
+$roboto: 'Roboto', sans-serif;
+
+
+// text Colors ---------------
+
+$black: #000000;
+$dark: #1A1A1A;
+$white: #ffffff;
+$dark-blue: #0D304E;
+$dark-red: #AB3229;
+$section-bg: #EEEDE9;
+
+
+
+
+// Theme Color
+$theme-color: #AB804A;
+$theme-hover-color: #bf8b54;
+$assetPath : "../img";
+/*--------------- Font size Variables ---------------*/
+$font-size-base:16px;
+
+/*--------------- Font weight Variables ---------------*/
+$thin:100;
+$extra-light:200;
+$light:300;
+$regular:400;
+$medium:500;
+$semi-bold:600;
+$bold:700;
+$extra-bold:800;
+$xx-bold:900;
+
+// Responsive Variables 
+$xx-layout : 'only screen and (min-width: 1366px) and (max-width: 1600px)';
+$xl-layout : 'only screen and (min-width: 1200px) and (max-width: 1365px)';
+$lg-layout : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$mdd-layout:'only screen and (min-width: 768px) and (max-width: 1024px)';
+$xs-layout:'only screen and (max-width: 767px)';
+$sm-layout: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xss-layout:'only screen and (max-width: 480px)';
+$xsm-layout:'only screen and (max-width: 320px)';
+
+
+.single-testimonial {
+    p {
+        font-size: 16px;
+        line-height: 32px;
+        margin: 30px auto 32px;
+        width: 80%;
+        @media #{$xl-layout} {
+            width: 90%;
+        }
+      }
+}
